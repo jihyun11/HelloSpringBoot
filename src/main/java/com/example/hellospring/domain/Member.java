@@ -1,8 +1,13 @@
 package com.example.hellospring.domain;
 
-public class Member {
+import jakarta.persistence.*;
+import org.hibernate.annotations.Generated;
 
+@Entity
+public class Member {
+    @Id @GeneratedValue(strategy = GenerationType.IDENTITY) //DB가 알아서 생성해주는 아이덴티티 전략
     private Long id;
+
     private String name;
 
     private int money;
