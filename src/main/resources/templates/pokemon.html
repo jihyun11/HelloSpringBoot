@@ -7,9 +7,8 @@
 <body>
 <form action="/pokemon" method="post">
     <div class="form-group">
-        <input type="radio" name="pokemon" value="Pikachu">피카츄
-        <input type="radio" name="pokemon" value="Chicorita" checked="checked">치코리타
-        <input type="radio" name="pokemon" value="Pieri">파이리 <br>
+        <label for="pokemon">데려갈 포켓몬 이름</label>
+        <input type="text" id="pokemon" name="pokemon" placeholder="포켓몬을 입력하세요.">
     </div>
     <button type="submit">선택</button>
 </form>
