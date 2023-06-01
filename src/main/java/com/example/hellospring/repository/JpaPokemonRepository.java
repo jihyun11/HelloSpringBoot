@@ -3,9 +3,10 @@ package com.example.hellospring.repository;
 import com.example.hellospring.domain.Member;
 import com.example.hellospring.domain.Pokemon;
 import jakarta.persistence.EntityManager;
+import org.springframework.stereotype.Repository;
 
 import java.util.List;
-
+@Repository
 public class JpaPokemonRepository implements PokemonRepository{
 
     private final EntityManager em;
