@@ -4,8 +4,10 @@ import jakarta.persistence.Entity;
 import jakarta.persistence.GeneratedValue;
 import jakarta.persistence.GenerationType;
 import jakarta.persistence.Id;
+import lombok.ToString;
 
 @Entity
+@ToString
 public class Pokemon {
     @Id @GeneratedValue(strategy = GenerationType.IDENTITY) //DB가 알아서 생성해주는 아이덴티티 전략
     private Long pid;

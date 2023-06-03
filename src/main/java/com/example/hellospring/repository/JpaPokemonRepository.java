@@ -23,7 +23,7 @@ public class JpaPokemonRepository implements PokemonRepository{
 
     @Override
     public List<Pokemon> findAll() {
-        List<Pokemon> result = em.createQuery("select m from Member m", Pokemon.class).getResultList(); //객체를 대상으로 쿼리를 날림
+        List<Pokemon> result = em.createQuery("select m from Pokemon m", Pokemon.class).getResultList(); //객체를 대상으로 쿼리를 날림
         return result;
     }
 }
